@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('vendedor_id')->constrained('vendedores');
             $table->decimal('valor_da_venda', 10, 2);
-            $table->decimal('comissao', 10, 2); // Novo campo "comissao"
-            $table->string('nome'); // Novo campo "nome"
+            $table->decimal('comissao', 10, 2); 
+            $table->string('nome'); 
             $table->string('email')->nullable();
             $table->date('data_da_venda');
             $table->timestamps();
